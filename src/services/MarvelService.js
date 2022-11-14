@@ -26,6 +26,7 @@ class MarvelService {
 
     _transformCharacter = (char) => {
         return {
+            id: char.id,
             name: char.name,
             description: char.description || 'No description in the database...',
             thumbnail: `${char.thumbnail.path}.${char.thumbnail.extension}`,
