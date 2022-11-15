@@ -79,6 +79,10 @@
         transition: none;
 
     }
+    &:disabled,
+    &[disabled] {
+        filter: grayscale(0.7);
+    }
     &.button__main::before, &.button__main::after {
         background-color: $main-color;
     }

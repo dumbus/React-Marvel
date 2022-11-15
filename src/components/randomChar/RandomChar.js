@@ -82,7 +82,10 @@ const View = ({char}) => {
     const { name, description, thumbnail, homepage, wiki } = char;
 
     let imgStyle = {'objectFit' : 'cover'};
-    if (thumbnail === 'http://i.annihil.us/u/prod/marvel/i/mg/b/40/image_not_available.jpg') {
+    if (
+        thumbnail === 'http://i.annihil.us/u/prod/marvel/i/mg/b/40/image_not_available.jpg' || 
+        thumbnail === 'http://i.annihil.us/u/prod/marvel/i/mg/f/60/4c002e0305708.gif'
+    ) {
         imgStyle = {'objectFit' : 'contain'};
     }
 
