@@ -5,8 +5,6 @@ import ErrorMessage from '../errorMessage/ErrorMessage';
 import useMarvelService from '../../services/MarvelService';
 
 import './comicsList.scss';
-// import uw from '../../resources/img/UW.png';
-// import xMen from '../../resources/img/x-men.png';
 
 const ComicsList = () => {
     const [comicsList, setComicsList] = useState([]);
@@ -15,6 +13,8 @@ const ComicsList = () => {
     const [comicsEnded, setComicsEnded] = useState(false);
 
     const { loading, error, getAllComics } = useMarvelService();
+
+    console.log('comicslist');
 
     useEffect(() => {
         onRequest(offset, true);
